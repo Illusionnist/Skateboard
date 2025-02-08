@@ -5,5 +5,7 @@ import dynamic from "next/dynamic";
 export const components = {
   hero: dynamic(() => import("./Hero")),
   product_grid: dynamic(() => import("./ProductGrid")),
+  team_grid: dynamic(() => import("./TeamGrid")),
   textand_image: dynamic(() => import("./TextandImage")),
+  video_block: dynamic(() => import("./VideoBlock")),
 };

@@ -8,7 +8,6 @@ import { clsx } from "clsx";
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import { Scribble } from "./Scribble";
-import { Url } from "next/dist/shared/lib/router/router";
 
 async function getDominantColor(url: string) {
   const paletteURl = new URL(url);
@@ -23,7 +22,6 @@ async function getDominantColor(url: string) {
 type Props = {
   id: string;
 };
-
 const VERTICAL_LINE_CLASSES =
   "absolute top-0 h-full stroke-2 text-stone-300 transition-colors group-hover:text-stone-400";
 

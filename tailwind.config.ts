@@ -32,6 +32,7 @@ export default {
         "brand-pink": "#f7d0e9",
         "brand-purple": "#692e54",
         "brand-gray": "#fffdf9",
+        "brand-red": "#880808",
       },
       fluid: (({ theme }) => ({
         defaultScreens: ["20rem", theme("screens.lg")],
