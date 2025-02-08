@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
 type TextAndImageBundleSlice = {
   id: string;
   slice_type: "text_and_image_bundle";
-  slices: Content.TextAndImageSlice[];
+  slices: Content.TextandImageSlice[];
 };
 
 function bundleTextAndImageSlices(
