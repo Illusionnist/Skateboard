@@ -1,0 +1,16 @@
+{
+  "id": "textand_image",
+  "type": "SharedSlice",
+  "name": "TextandImage",
+  "description": "TextandImage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

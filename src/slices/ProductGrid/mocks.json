@@ -1,0 +1,52 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Labore pariatur adipisicing qui duis ad est id nulla ea sunt tempor dolore et nulla excepteur. Fugiat qui esse occaecat duis reprehenderit velit elit consectetur duis sit elit labore ipsum quis."
+						}
+					}
+				]
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Automobile"
+						}
+					}
+				]
+			},
+			"product": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"skateboard",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "05e2423b-c1ef-4018-bf7c-2524f5d552ac",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

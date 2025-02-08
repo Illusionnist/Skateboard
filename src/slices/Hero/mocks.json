@@ -1,0 +1,40 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sint commodo consequat eiusmod elit nostrud occaecat deserunt reprehenderit. Aute non pariatur laboris duis minim tempor irure nisi labore est occaecat anim esse."
+						}
+					}
+				]
+			},
+			"button": {
+				"key": "0c3159ed-13c3-4656-880b-fc5e5b7eaa48",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "require"
+				}
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Ranch"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
