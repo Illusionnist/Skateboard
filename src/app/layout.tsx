@@ -39,7 +39,7 @@ export default function RootLayout({
           {children}
           <Footer></Footer>
         </main>
-        <SVGFilters> </SVGFilters>
+        <SVGFilters />
       </body>
     </html>
   );
