@@ -90,6 +90,21 @@ export interface SettingsDocumentDataNavigationItem {
 }
 
 /**
+ * Item in *Settings → Footer Skateboards*
+ */
+export interface SettingsDocumentDataFooterSkateboardsItem {
+  /**
+   * Skateboard field in *Settings → Footer Skateboards*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.footer_skateboards[].skateboard
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  skateboard: prismic.ImageField<never>;
+}
+
+/**
  * Content for Settings documents
  */
 interface SettingsDocumentData {
@@ -136,6 +151,30 @@ interface SettingsDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   navigation: prismic.GroupField<Simplify<SettingsDocumentDataNavigationItem>>;
+
+  /**
+   * Footer Image field in *Settings*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.footer_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  footer_image: prismic.ImageField<never>;
+
+  /**
+   * Footer Skateboards field in *Settings*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.footer_skateboards[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  footer_skateboards: prismic.GroupField<
+    Simplify<SettingsDocumentDataFooterSkateboardsItem>
+  >;
 }
 
 /**
@@ -342,6 +381,46 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   button: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+
+  /**
+   * Skateboard Deck Texture field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.skateboard_deck_texture
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  skateboard_deck_texture: prismic.ImageField<never>;
+
+  /**
+   * Skateboard Wheel Texture field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.skateboard_wheel_texture
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  skateboard_wheel_texture: prismic.ImageField<never>;
+
+  /**
+   * Skateboard Truck Color field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.skateboard_truck_color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  skateboard_truck_color: prismic.ColorField;
+
+  /**
+   * Skateboard Bolt Color field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.skateboard_bolt_color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  skateboard_bolt_color: prismic.ColorField;
 }
 
 /**
@@ -745,6 +824,7 @@ declare module "@prismicio/client" {
       SettingsDocument,
       SettingsDocumentData,
       SettingsDocumentDataNavigationItem,
+      SettingsDocumentDataFooterSkateboardsItem,
       SkateboardDocument,
       SkateboardDocumentData,
       SkaterDocument,
