@@ -21,7 +21,7 @@ declare module "react" {
 /**
  * Props for `TextAndImage`.
  */
-export type TextAndImageProps = SliceComponentProps<Content.TextAndImageSlice>;
+export type TextAndImageProps = SliceComponentProps<Content.TextandImageSlice>;
 
 /**
  * Component for "TextAndImage" Slices.
